@@ -7,10 +7,10 @@ namespace VeryfiLensiOSXamarinDemo
 {
     public partial class ViewController : UIViewController
     {
-        const string CLIENT_ID = "xxx";
-        const string AUTH_USRNE = "xxx";
-        const string AUTH_API_K = "xxx";
-        const string API_URL = "https://xxx.com";
+        const string CLIENT_ID = "XXX";
+        const string AUTH_USRNE = "XXX";
+        const string AUTH_API_K = "XXX";
+        const string API_URL = "XXX";
 
         public ViewController(IntPtr handle) : base(handle)
         {

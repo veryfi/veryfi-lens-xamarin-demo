@@ -15,9 +15,9 @@ namespace VeryfiLensAndroidXamarinDemo
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
-        const string CLIENT_ID = "xxx";
-        const string AUTH_USRNE = "xxx";
-        const string AUTH_API_K = "xxx";
+        const string CLIENT_ID = "XXX";
+        const string AUTH_USRNE = "XXX";
+        const string AUTH_API_K = "XXX";
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
