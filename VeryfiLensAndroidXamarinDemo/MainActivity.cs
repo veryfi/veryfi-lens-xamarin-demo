@@ -7,6 +7,7 @@ using AndroidX.AppCompat.Widget;
 using AndroidX.AppCompat.App;
 using System.Collections.Generic;
 using Com.Veryfi.Lens;
+using Com.Veryfi.Lens.Helpers;
 using Com.Veryfi.Lens.Models;
 using Org.Json;
 
@@ -48,12 +49,12 @@ namespace VeryfiLensAndroidXamarinDemo
                 "Entertainment",
                 "Supplies"
             };
-            var documentTypes = new List<string>
+            var documentTypes = new List<DocumentType>
             {
-                "long_receipt",
-                "receipt",
-                "bill",
-                "other"
+                DocumentType.LongReceipt,
+                DocumentType.Receipt,
+                DocumentType.Bill,
+                DocumentType.Other
             };
             VeryfiLensSettings veryfiLensSettings = new VeryfiLensSettings
             {
