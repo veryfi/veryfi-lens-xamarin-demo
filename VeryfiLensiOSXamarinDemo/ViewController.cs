@@ -25,12 +25,12 @@ namespace VeryfiLensiOSXamarinDemo
 
         partial void OpenLens(UIButton sender)
         {
-            VeryfiLens.Shared().ShowCameraInViewController(this);
+            VeryfiLens.Shared.ShowCameraIn(this);
         }
 
         private void SetUpVeryfiLensDelegate()
         {
-            VeryfiLens.Shared().Delegate = new VeryfiLensDelegateListener(this);
+            VeryfiLens.Shared.Delegate = new VeryfiLensDelegateListener(this);
         }
 
         private void SetUpVeryfiLens()
@@ -81,13 +81,13 @@ namespace VeryfiLensiOSXamarinDemo
                 GalleryIsOn = true
             };
             var veryfiLensCredentials = new VeryfiLensCredentials
-            {
-                ApiKey = AUTH_API_K,
-                Username = AUTH_USRNE,
-                ClientId = CLIENT_ID,
-                Url = API_URL
-            };
-            VeryfiLens.Shared().ConfigureWithCredentials(veryfiLensCredentials, veryfiLensSettings);
+            (
+             CLIENT_ID,
+             AUTH_USRNE,
+             AUTH_API_K,
+             API_URL
+            );
+            VeryfiLens.Shared.ConfigureWith(veryfiLensCredentials, veryfiLensSettings, null);
             SetCategories();
             SetCustomers();
             SetTags();
@@ -108,7 +108,7 @@ namespace VeryfiLensiOSXamarinDemo
                 };
                 costCodes[i] = job;
             }
-            VeryfiLens.Shared().Settings.CostCodes = costCodes;
+            VeryfiLens.Shared.Settings.CostCodes = costCodes;
         }
 
         private void SetTags()
@@ -123,7 +123,7 @@ namespace VeryfiLensiOSXamarinDemo
                 };
                 tags[i] = tag;
             }
-            VeryfiLens.Shared().Settings.Tags = tags;
+            VeryfiLens.Shared.Settings.Tags = tags;
         }
 
         private void SetCustomers()
@@ -139,7 +139,7 @@ namespace VeryfiLensiOSXamarinDemo
                 };
                 customers[i] = customer;
             }
-            VeryfiLens.Shared().Settings.Customers = customers;
+            VeryfiLens.Shared.Settings.Customers = customers;
         }
 
         private void SetCategories()
@@ -155,7 +155,7 @@ namespace VeryfiLensiOSXamarinDemo
                 };
                 categories[i] = category;
             }
-            VeryfiLens.Shared().Settings.CategoriesList = categories;
+            VeryfiLens.Shared.Settings.CategoriesList = categories;
         }
 
         private void ShowLogs(string log)
