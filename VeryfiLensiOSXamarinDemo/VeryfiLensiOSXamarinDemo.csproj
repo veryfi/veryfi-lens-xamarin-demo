@@ -75,7 +75,7 @@
     <ItemGroup>
       <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
       <PackageReference Include="VeryfiLensiOSXamarinBinding">
-        <Version>1.6.5</Version>
+        <Version>1.6.5.1</Version>
       </PackageReference>
     </ItemGroup>
     <ItemGroup>
