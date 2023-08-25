@@ -1,8 +1,9 @@
-![Veryfi Logo](https://cdn.veryfi.com/logos/veryfi-logo-wide-github.png)
+<img src="https://user-images.githubusercontent.com/30125790/212157461-58bdc714-2f89-44c2-8e4d-d42bee74854e.png#gh-dark-mode-only" width="200">
+<img src="https://user-images.githubusercontent.com/30125790/212157486-bfd08c5d-9337-4b78-be6f-230dc63838ba.png#gh-light-mode-only" width="200">
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-# Veryfi Lens
+# Veryfi Lens Xamarin (Deprecated) use our ![.NET version](https://github.com/veryfi/veryfi-lens-net-demo)
 Veryfi Lens is code (a framework) with UI for your mobile app to give it document capture superpowers in minutes.
 
 Let Veryfi handle the complexities of frame processing, asset preprocessing, edge routing, and machine vision challenges in document capture. We have been at this for a long time and understand the intricate nature of mobile capture. That’s why we built Lens. Veryfi Lens is built by developers for developers; making the whole process of integrating Lens into your app fast and easy with as few lines as possible.
